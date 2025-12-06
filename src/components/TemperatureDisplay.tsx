@@ -77,7 +77,7 @@ export default function TemperatureDisplay({ temperatures, loading }: Temperatur
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                     <div className="flex items-center gap-1.5">
                       <Clock className="w-4 h-4" />
-                      {new Date(temp.created_at).toLocaleString('ko-KR')}
+                        {new Date(temp.created_at).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })}
                     </div>
                   </td>
                 </tr>
